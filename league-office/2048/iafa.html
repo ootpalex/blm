@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2048 IAFA · Baseball League Major</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700;800&family=Public+Sans:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="../../assets/style.css?v=20261010153857">
+<link rel="icon" href="../../favicon.ico" sizes="48x48">
+<link rel="icon" href="../../assets/blm_icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+
+</head>
+<body>
+<header class="mast">
+  <div class="wrap">
+    <a class="brand" href="../../index.html"><img src="../../assets/blm_badge.svg" alt="Baseball League Major"><span class="name">The Long Season</span></a>
+    <nav aria-label="Site">
+      <a href="../../news/index.html">News</a>
+      <a href="../../league-office/index.html" aria-current="page">League Office</a>
+      <a class="out" href="https://statsplus.net/blm/">StatsPlus<svg class="ext" aria-hidden="true" focusable="false" width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 7v3a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V3a.5.5 0 0 1 .5-.5h3"/><path d="M7.5 1.5h3v3"/><path d="M10.5 1.5 5.75 6.25"/></svg><span class="vh"> (another site)</span></a>
+      <a class="out" href="https://docs.google.com/document/d/e/2PACX-1vSjvEgensWb1KMM4GX5d5zkqG9FBjbr1f8xcKm-8SUJeelV_89fQ-VsXUJmipZzoTj8aWhR-kScRdxw/pub">Constitution<svg class="ext" aria-hidden="true" focusable="false" width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 7v3a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V3a.5.5 0 0 1 .5-.5h3"/><path d="M7.5 1.5h3v3"/><path d="M10.5 1.5 5.75 6.25"/></svg><span class="vh"> (another site)</span></a>
+      <a class="out" href="https://ootpalex.github.io/blm-teams/">Teams Available<svg class="ext" aria-hidden="true" focusable="false" width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 7v3a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V3a.5.5 0 0 1 .5-.5h3"/><path d="M7.5 1.5h3v3"/><path d="M10.5 1.5 5.75 6.25"/></svg><span class="vh"> (another site)</span></a>
+    </nav>
+  </div>
+</header>
+
+
+<div class="hero slim">
+  <div class="wrap">
+    <div class="eyebrow"><a href="../index.html">League Office</a> · Getting ready for 2048</div>
+    <h1>2048 <em>Season</em></h1>
+  </div>
+</div>
+<nav class="tabs" aria-label="2048 season">
+  <div class="wrap">
+    <a href="index.html">Overview</a><a href="lottery.html">Lottery</a><a href="order.html">Draft order</a><a href="comp.html">Comp picks</a><a href="cb.html">Competitive balance</a><a href="tax.html">Luxury tax</a><a href="iafa.html" aria-current="page">IAFA</a>
+  </div>
+</nav>
+<main class="wrap page">
+
+<h2>IAFA budgets</h2>
+<p class="sub">International amateur signing budgets: Round B $5.75m · Round A $5.25m · others $4.75m</p>
+<div class="tbl"><table class="fit">
+  <thead><tr><th>Team</th><th class="hide-sm">Tier</th><th class="num">Budget</th><th class="num hide-sm">Spent</th><th class="num">Left</th><th class="num hide-sm">Signings</th></tr></thead>
+  <tbody>
+    <tr><td><span class="team"><img class="logo" src="../../assets/logos/ARI.png" alt="" loading="lazy"><span class="full">Arizona Diamondbacks</span><span class="short">Diamondbacks</span></span></td><td class="hide-sm">Round B</td><td class="num">$5.75m</td>
+      <td class="num hide-sm">$5.75m</td><td class="num">$0</td><td class="num hide-sm">1</td></tr>
+  
+    <tr><td><span class="team"><img class="logo" src="../../assets/logos/ATL.png" alt="" loading="lazy"><span class="full">Atlanta Braves</span><span class="short">Braves</span></span></td><td class="hide-sm">Round B</td><td class="num">$5.75m</td>
+      <td class="num hide-sm">$5.72m</td><td class="num">$26.7k</td><td class="num hide-sm">1</td></tr>
+  
+    <tr><td><span class="team"><img class="logo" src="../../assets/logos/BAL.png" alt="" loading="lazy"><span class="full">Baltimore Orioles</span><span class="short">Orioles</span></span></td><td class="hide-sm"></td><td class="num">$4.75m</td>
+      <td class="num hide-sm">$4.75m</td><td class="num">$0</td><td class="num hide-sm">1</td></tr>
+  
+    <tr><td><span class="team"><img class="logo" src="../../assets/logos/BOS.png" alt="" loading="lazy"><span class="full">Boston Red Sox</span><span class="short">Red Sox</span></span></td><td class="hide-sm"></td><td class="num">$4.75m</td>
+      <td class="num hide-sm">$0</td><td class="num">$4.75m</td><td class="num hide-sm">0</td></tr>
+  
+    <tr><td><span class="team"><img class="logo" src="../../assets/logos/CHC.png" alt="" loading="lazy"><span class="full">Chicago Cubs</span><span class="short">Cubs</span></span></td><td class="hide-sm"></td><td class="num">$4.75m</td>
+      <td class="num hide-sm">$450k</td><td class="num">$4.3m</td><td class="num hide-sm">1</td></tr>
+  
+    <tr><td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="hide-sm">Round A</td><td class="num">$5.25m</td>
+      <td class="num hide-sm">$4.58m</td><td class="num">$670k</td><td class="num hide-sm">1</td></tr>
+  
+    <tr><td><span class="team"><img class="logo" src="../../assets/logos/CIN.png" alt="" loading="lazy"><span class="full">Cincinnati Reds</span><span class="short">Reds</span></span></td><td class="hide-sm"></td><td class="num">$4.75m</td>
+      <td class="num hide-sm">$1.8m</td><td class="num">$2.95m</td><td class="num hide-sm">3</td></tr>
+  
+    <tr><td><span class="team"><img class="logo" src="../../assets/logos/CLE.png" alt="" loading="lazy"><span class="full">Cleveland Guardians</span><span class="short">Guardians</span></span></td><td class="hide-sm">Round B</td><td class="num">$5.75m</td>
+      <td class="num hide-sm">$5.75m</td><td class="num">$0</td><td class="num hide-sm">1</td></tr>
+  
+    <tr><td><span class="team"><img class="logo" src="../../assets/logos/COL.png" alt="" loading="lazy"><span class="full">Colorado Rockies</span><span class="short">Rockies</span></span></td><td class="hide-sm"></td><td class="num">$4.75m</td>
+      <td class="num hide-sm">$4.75m</td><td class="num">$1.8k</td><td class="num hide-sm">11</td></tr>
+  
+    <tr><td><span class="team"><img class="logo onlight" src="../../assets/logos/DET.png" alt="" loading="lazy"><span class="full">Detroit Tigers</span><span class="short">Tigers</span></span></td><td class="hide-sm"></td><td class="num">$4.75m</td>
+      <td class="num hide-sm">$0</td><td class="num">$4.75m</td><td class="num hide-sm">0</td></tr>
+  
+    <tr><td><span class="team"><img class="logo" src="../../assets/logos/HOU.png" alt="" loading="lazy"><span class="full">Houston Astros</span><span class="short">Astros</span></span></td><td class="hide-sm">Round B</td><td class="num">$5.75m</td>
+      <td class="num hide-sm">$232k</td><td class="num">$5.52m</td><td class="num hide-sm">1</td></tr>
+  
+    <tr><td><span class="team"><img class="logo" src="../../assets/logos/KC.png" alt="" loading="lazy"><span class="full">Kansas City Royals</span><span class="short">Royals</span></span></td><td class="hide-sm"></td><td class="num">$4.75m</td>
+      <td class="num hide-sm">$4.75m</td><td class="num">$0</td><td class="num hide-sm">1</td></tr>
+  
+    <tr><td><span class="team"><img class="logo" src="../../assets/logos/LAA.png" alt="" loading="lazy"><span class="full">Los Angeles Angels</span><span class="short">Angels</span></span></td><td class="hide-sm">Round B</td><td class="num">$5.75m</td>
+      <td class="num hide-sm">$5.75m</td><td class="num">$0.7k</td><td class="num hide-sm">3</td></tr>
+  
+    <tr><td><span class="team"><img class="logo" src="../../assets/logos/LAD.png" alt="" loading="lazy"><span class="full">Los Angeles Dodgers</span><span class="short">Dodgers</span></span></td><td class="hide-sm"></td><td class="num">$4.75m</td>
+      <td class="num hide-sm">$4.75m</td><td class="num">$0</td><td class="num hide-sm">1</td></tr>
+  
+    <tr><td><span class="team"><img class="logo" src="../../assets/logos/MIA.png" alt="" loading="lazy"><span class="full">Miami Marlins</span><span class="short">Marlins</span></span></td><td class="hide-sm">Round A</td><td class="num">$5.25m</td>
+      <td class="num hide-sm">$0</td><td class="num">$5.25m</td><td class="num hide-sm">0</td></tr>
+  
+    <tr><td><span class="team"><img class="logo" src="../../assets/logos/MIL.png" alt="" loading="lazy"><span class="full">Milwaukee Brewers</span><span class="short">Brewers</span></span></td><td class="hide-sm">Round A</td><td class="num">$5.25m</td>
+      <td class="num hide-sm">$5.25m</td><td class="num">$0</td><td class="num hide-sm">1</td></tr>
+  
+    <tr><td><span class="team"><img class="logo" src="../../assets/logos/MIN.png" alt="" loading="lazy"><span class="full">Minnesota Twins</span><span class="short">Twins</span></span></td><td class="hide-sm"></td><td class="num">$4.75m</td>
+      <td class="num hide-sm">$4.75m</td><td class="num">$0</td><td class="num hide-sm">1</td></tr>
+  
+    <tr><td><span class="team"><img class="logo" src="../../assets/logos/NYM.png" alt="" loading="lazy"><span class="full">New York Mets</span><span class="short">Mets</span></span></td><td class="hide-sm"></td><td class="num">$4.75m</td>
+      <td class="num hide-sm">$4.73m</td><td class="num">$15.9k</td><td class="num hide-sm">1</td></tr>
+  
+    <tr><td><span class="team"><img class="logo" src="../../assets/logos/NYY.png" alt="" loading="lazy"><span class="full">New York Yankees</span><span class="short">Yankees</span></span></td><td class="hide-sm"></td><td class="num">$4.75m</td>
+      <td class="num hide-sm">$4.7m</td><td class="num">$50k</td><td class="num hide-sm">1</td></tr>
+  
+    <tr><td><span class="team"><img class="logo onlight" src="../../assets/logos/OAK.png" alt="" loading="lazy"><span class="full">Oakland Athletics</span><span class="short">Athletics</span></span></td><td class="hide-sm">Round A</td><td class="num">$5.25m</td>
+      <td class="num hide-sm">$5.25m</td><td class="num">$0</td><td class="num hide-sm">1</td></tr>
+  
+    <tr><td><span class="team"><img class="logo" src="../../assets/logos/PHI.png" alt="" loading="lazy"><span class="full">Philadelphia Phillies</span><span class="short">Phillies</span></span></td><td class="hide-sm">Round B</td><td class="num">$5.75m</td>
+      <td class="num hide-sm">$5.75m</td><td class="num">$0</td><td class="num hide-sm">1</td></tr>
+  
+    <tr><td><span class="team"><img class="logo" src="../../assets/logos/PIT.png" alt="" loading="lazy"><span class="full">Pittsburgh Pirates</span><span class="short">Pirates</span></span></td><td class="hide-sm">Round A</td><td class="num">$5.25m</td>
+      <td class="num hide-sm">$5.25m</td><td class="num">$0</td><td class="num hide-sm">1</td></tr>
+  
+    <tr><td><span class="team"><img class="logo" src="../../assets/logos/SD.png" alt="" loading="lazy"><span class="full">San Diego Padres</span><span class="short">Padres</span></span></td><td class="hide-sm">Round B</td><td class="num">$5.75m</td>
+      <td class="num hide-sm">$1.6m</td><td class="num">$4.15m</td><td class="num hide-sm">1</td></tr>
+  
+    <tr><td><span class="team"><img class="logo" src="../../assets/logos/SF.png" alt="" loading="lazy"><span class="full">San Francisco Giants</span><span class="short">Giants</span></span></td><td class="hide-sm"></td><td class="num">$4.75m</td>
+      <td class="num hide-sm">$0</td><td class="num">$4.75m</td><td class="num hide-sm">0</td></tr>
+  
+    <tr><td><span class="team"><img class="logo" src="../../assets/logos/SEA.png" alt="" loading="lazy"><span class="full">Seattle Mariners</span><span class="short">Mariners</span></span></td><td class="hide-sm">Round A</td><td class="num">$5.25m</td>
+      <td class="num hide-sm">$5.25m</td><td class="num">$0</td><td class="num hide-sm">1</td></tr>
+  
+    <tr><td><span class="team"><img class="logo" src="../../assets/logos/STL.png" alt="" loading="lazy"><span class="full">St. Louis Cardinals</span><span class="short">Cardinals</span></span></td><td class="hide-sm">Round A</td><td class="num">$5.25m</td>
+      <td class="num hide-sm">$0</td><td class="num">$5.25m</td><td class="num hide-sm">0</td></tr>
+  
+    <tr><td><span class="team"><img class="logo" src="../../assets/logos/TB.png" alt="" loading="lazy"><span class="full">Tampa Bay Rays</span><span class="short">Rays</span></span></td><td class="hide-sm">Round A</td><td class="num">$5.25m</td>
+      <td class="num hide-sm">$2.59m</td><td class="num">$2.66m</td><td class="num hide-sm">1</td></tr>
+  
+    <tr><td><span class="team"><img class="logo" src="../../assets/logos/TEX.png" alt="" loading="lazy"><span class="full">Texas Rangers</span><span class="short">Rangers</span></span></td><td class="hide-sm"></td><td class="num">$4.75m</td>
+      <td class="num hide-sm">$2.9m</td><td class="num">$1.85m</td><td class="num hide-sm">1</td></tr>
+  
+    <tr><td><span class="team"><img class="logo" src="../../assets/logos/TOR.png" alt="" loading="lazy"><span class="full">Toronto Blue Jays</span><span class="short">Blue Jays</span></span></td><td class="hide-sm">Round B</td><td class="num">$5.75m</td>
+      <td class="num hide-sm">$5.75m</td><td class="num">$0</td><td class="num hide-sm">1</td></tr>
+  
+    <tr><td><span class="team"><img class="logo onlight" src="../../assets/logos/WAS.png" alt="" loading="lazy"><span class="full">Washington Nationals</span><span class="short">Nationals</span></span></td><td class="hide-sm"></td><td class="num">$4.75m</td>
+      <td class="num hide-sm">$4.75m</td><td class="num">$0</td><td class="num hide-sm">1</td></tr>
+  </tbody>
+</table></div>
+
+<h3 id="signings">Signings</h3>
+<p class="fine">143 players signed for a bonus, biggest first. From the league's transaction log.</p>
+<div class="tbl dense logo-sm"><table class="fit">
+  <thead><tr><th class="grow">Player</th><th class="hide-sm">From</th><th>Team</th><th class="num">Bonus</th><th class="num hide-sm">Signed</th></tr></thead>
+  <tbody>
+    <tr><td class="grow sel"><span class="pos">SP</span> <a class="plink" href="https://statsplus.net/blm/player/44813/">Sergio Velasquez</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/ARI.png" alt="" loading="lazy"><span class="full">Arizona Diamondbacks</span><span class="short">Diamondbacks</span></span></td><td class="num">$5.75m</td><td class="num hide-sm fine">03/26</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">CF</span> <a class="plink" href="https://statsplus.net/blm/player/44765/">Manny Mosqueda</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/PHI.png" alt="" loading="lazy"><span class="full">Philadelphia Phillies</span><span class="short">Phillies</span></span></td><td class="num">$5.75m</td><td class="num hide-sm fine">03/02</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">CF</span> <a class="plink" href="https://statsplus.net/blm/player/44820/">Mike Murillo</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/TOR.png" alt="" loading="lazy"><span class="full">Toronto Blue Jays</span><span class="short">Blue Jays</span></span></td><td class="num">$5.75m</td><td class="num hide-sm fine">03/02</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">CF</span> <a class="plink" href="https://statsplus.net/blm/player/44824/">Nicoláo Carregueiro</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/SEA.png" alt="" loading="lazy"><span class="full">Seattle Mariners</span><span class="short">Mariners</span></span></td><td class="num">$5.25m</td><td class="num hide-sm fine">03/30</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">RF</span> <a class="plink" href="https://statsplus.net/blm/player/44682/">Willie Monroy</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/PIT.png" alt="" loading="lazy"><span class="full">Pittsburgh Pirates</span><span class="short">Pirates</span></span></td><td class="num">$5.25m</td><td class="num hide-sm fine">03/14</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">CF</span> <a class="plink" href="https://statsplus.net/blm/player/44737/">Jorge Delaluz</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/MIL.png" alt="" loading="lazy"><span class="full">Milwaukee Brewers</span><span class="short">Brewers</span></span></td><td class="num">$5.25m</td><td class="num hide-sm fine">03/14</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SP</span> <a class="plink" href="https://statsplus.net/blm/player/44767/">Daniel Cervantes</a><div class="fine show-sm">Cuba</div></td><td class="hide-sm">Cuba</td>
+      <td><span class="team"><img class="logo onlight" src="../../assets/logos/OAK.png" alt="" loading="lazy"><span class="full">Oakland Athletics</span><span class="short">Athletics</span></span></td><td class="num">$5.25m</td><td class="num hide-sm fine">03/02</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">RF</span> <a class="plink" href="https://statsplus.net/blm/player/44818/">Ramon Monticelli</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/LAA.png" alt="" loading="lazy"><span class="full">Los Angeles Angels</span><span class="short">Angels</span></span></td><td class="num">$5.25m</td><td class="num hide-sm fine">04/27</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">1B</span> <a class="plink" href="https://statsplus.net/blm/player/44724/">Bobby Saldivar</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/KC.png" alt="" loading="lazy"><span class="full">Kansas City Royals</span><span class="short">Royals</span></span></td><td class="num">$4.75m</td><td class="num hide-sm fine">03/14</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">CF</span> <a class="plink" href="https://statsplus.net/blm/player/44831/">Jose Corea</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/LAD.png" alt="" loading="lazy"><span class="full">Los Angeles Dodgers</span><span class="short">Dodgers</span></span></td><td class="num">$4.75m</td><td class="num hide-sm fine">04/07</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">2B</span> <a class="plink" href="https://statsplus.net/blm/player/44786/">Manuel Alvarez</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo onlight" src="../../assets/logos/WAS.png" alt="" loading="lazy"><span class="full">Washington Nationals</span><span class="short">Nationals</span></span></td><td class="num">$4.75m</td><td class="num hide-sm fine">05/04</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SP</span> <a class="plink" href="https://statsplus.net/blm/player/44671/">Juan Casares</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/BAL.png" alt="" loading="lazy"><span class="full">Baltimore Orioles</span><span class="short">Orioles</span></span></td><td class="num">$4.75m</td><td class="num hide-sm fine">06/29</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">C</span> <a class="plink" href="https://statsplus.net/blm/player/44822/">Bobby Flores</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/NYY.png" alt="" loading="lazy"><span class="full">New York Yankees</span><span class="short">Yankees</span></span></td><td class="num">$4.7m</td><td class="num hide-sm fine">03/26</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SP</span> <a class="plink" href="https://statsplus.net/blm/player/44815/">Jose Montoya</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CLE.png" alt="" loading="lazy"><span class="full">Cleveland Guardians</span><span class="short">Guardians</span></span></td><td class="num">$4.32m</td><td class="num hide-sm fine">06/01</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">2B</span> <a class="plink" href="https://statsplus.net/blm/player/44732/">Ivan Mejia</a><div class="fine show-sm">Cuba</div></td><td class="hide-sm">Cuba</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/ATL.png" alt="" loading="lazy"><span class="full">Atlanta Braves</span><span class="short">Braves</span></span></td><td class="num">$3.71m</td><td class="num hide-sm fine">06/08</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">CF</span> <a class="plink" href="https://statsplus.net/blm/player/44726/">Jonathan Bermudez</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/MIN.png" alt="" loading="lazy"><span class="full">Minnesota Twins</span><span class="short">Twins</span></span></td><td class="num">$1.91m</td><td class="num hide-sm fine">07/06</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">2B</span> <a class="plink" href="https://statsplus.net/blm/player/44739/">Francisco Rivas</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="num">$1.8m</td><td class="num hide-sm fine">03/30</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SS</span> <a class="plink" href="https://statsplus.net/blm/player/44748/">Enrique Corpes</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/ATL.png" alt="" loading="lazy"><span class="full">Atlanta Braves</span><span class="short">Braves</span></span></td><td class="num">$1.71m</td><td class="num hide-sm fine">06/08</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">3B</span> <a class="plink" href="https://statsplus.net/blm/player/44816/">David Limon</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/SD.png" alt="" loading="lazy"><span class="full">San Diego Padres</span><span class="short">Padres</span></span></td><td class="num">$1.6m</td><td class="num hide-sm fine">04/13</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">2B</span> <a class="plink" href="https://statsplus.net/blm/player/44710/">Danny Salazar</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/TB.png" alt="" loading="lazy"><span class="full">Tampa Bay Rays</span><span class="short">Rays</span></span></td><td class="num">$1.41m</td><td class="num hide-sm fine">08/17</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">C</span> <a class="plink" href="https://statsplus.net/blm/player/44703/">Bobby Meza</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CIN.png" alt="" loading="lazy"><span class="full">Cincinnati Reds</span><span class="short">Reds</span></span></td><td class="num">$1.31m</td><td class="num hide-sm fine">03/02</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">1B</span> <a class="plink" href="https://statsplus.net/blm/player/44720/">Leon Rael</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/TEX.png" alt="" loading="lazy"><span class="full">Texas Rangers</span><span class="short">Rangers</span></span></td><td class="num">$1.27m</td><td class="num hide-sm fine">04/27</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">1B</span> <a class="plink" href="https://statsplus.net/blm/player/44761/">Roberto Maldonado</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/NYM.png" alt="" loading="lazy"><span class="full">New York Mets</span><span class="short">Mets</span></span></td><td class="num">$1.2m</td><td class="num hide-sm fine">03/30</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SP</span> <a class="plink" href="https://statsplus.net/blm/player/44753/">Chris Carrillo</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/NYM.png" alt="" loading="lazy"><span class="full">New York Mets</span><span class="short">Mets</span></span></td><td class="num">$1.1m</td><td class="num hide-sm fine">03/14</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">1B</span> <a class="plink" href="https://statsplus.net/blm/player/44707/">Ruben Gutierrez</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/COL.png" alt="" loading="lazy"><span class="full">Colorado Rockies</span><span class="short">Rockies</span></span></td><td class="num">$1.1m</td><td class="num hide-sm fine">03/02</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">RF</span> <a class="plink" href="https://statsplus.net/blm/player/44796/">Carlos Zarate</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/MIN.png" alt="" loading="lazy"><span class="full">Minnesota Twins</span><span class="short">Twins</span></span></td><td class="num">$1.1m</td><td class="num hide-sm fine">05/18</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">1B</span> <a class="plink" href="https://statsplus.net/blm/player/44792/">Jose de Jesus</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/TEX.png" alt="" loading="lazy"><span class="full">Texas Rangers</span><span class="short">Rangers</span></span></td><td class="num">$1m</td><td class="num hide-sm fine">03/14</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">C</span> <a class="plink" href="https://statsplus.net/blm/player/44771/">Juan Vasquez</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CLE.png" alt="" loading="lazy"><span class="full">Cleveland Guardians</span><span class="short">Guardians</span></span></td><td class="num">$950k</td><td class="num hide-sm fine">03/30</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SS</span> <a class="plink" href="https://statsplus.net/blm/player/44772/">Carlos Ursua</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/COL.png" alt="" loading="lazy"><span class="full">Colorado Rockies</span><span class="short">Rockies</span></span></td><td class="num">$725k</td><td class="num hide-sm fine">04/27</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">2B</span> <a class="plink" href="https://statsplus.net/blm/player/44794/">Ricardo Cavazos</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/COL.png" alt="" loading="lazy"><span class="full">Colorado Rockies</span><span class="short">Rockies</span></span></td><td class="num">$650k</td><td class="num hide-sm fine">03/02</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SS</span> <a class="plink" href="https://statsplus.net/blm/player/44728/">Odilon Alfama</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/NYM.png" alt="" loading="lazy"><span class="full">New York Mets</span><span class="short">Mets</span></span></td><td class="num">$600k</td><td class="num hide-sm fine">04/07</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">1B</span> <a class="plink" href="https://statsplus.net/blm/player/44729/">Edwin Aredondo</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/MIN.png" alt="" loading="lazy"><span class="full">Minnesota Twins</span><span class="short">Twins</span></span></td><td class="num">$540k</td><td class="num hide-sm fine">05/04</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SS</span> <a class="plink" href="https://statsplus.net/blm/player/44681/">Emilio Medina</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/COL.png" alt="" loading="lazy"><span class="full">Colorado Rockies</span><span class="short">Rockies</span></span></td><td class="num">$500k</td><td class="num hide-sm fine">04/27</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">C</span> <a class="plink" href="https://statsplus.net/blm/player/44823/">Dave Lopez</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CLE.png" alt="" loading="lazy"><span class="full">Cleveland Guardians</span><span class="short">Guardians</span></span></td><td class="num">$480k</td><td class="num hide-sm fine">03/14</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">LF</span> <a class="plink" href="https://statsplus.net/blm/player/44803/">Rich Sanchez</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="num">$460k</td><td class="num hide-sm fine">05/04</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">LF</span> <a class="plink" href="https://statsplus.net/blm/player/44752/">Angelo Fontes</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CHC.png" alt="" loading="lazy"><span class="full">Chicago Cubs</span><span class="short">Cubs</span></span></td><td class="num">$450k</td><td class="num hide-sm fine">05/25</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">3B</span> <a class="plink" href="https://statsplus.net/blm/player/44727/">Rodolphe Guglielmotti</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/LAA.png" alt="" loading="lazy"><span class="full">Los Angeles Angels</span><span class="short">Angels</span></span></td><td class="num">$433.3k</td><td class="num hide-sm fine">04/13</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SP</span> <a class="plink" href="https://statsplus.net/blm/player/44821/">Danny Bernal</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/COL.png" alt="" loading="lazy"><span class="full">Colorado Rockies</span><span class="short">Rockies</span></span></td><td class="num">$410k</td><td class="num hide-sm fine">03/02</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">2B</span> <a class="plink" href="https://statsplus.net/blm/player/44736/">Alex Bobadilla</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/COL.png" alt="" loading="lazy"><span class="full">Colorado Rockies</span><span class="short">Rockies</span></span></td><td class="num">$400k</td><td class="num hide-sm fine">04/07</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">2B</span> <a class="plink" href="https://statsplus.net/blm/player/44721/">Damian Tax</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="num">$400k</td><td class="num hide-sm fine">05/11</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SS</span> <a class="plink" href="https://statsplus.net/blm/player/44734/">Jose Ceballos</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CIN.png" alt="" loading="lazy"><span class="full">Cincinnati Reds</span><span class="short">Reds</span></span></td><td class="num">$390k</td><td class="num hide-sm fine">03/02</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">CF</span> <a class="plink" href="https://statsplus.net/blm/player/44845/">Victor Arroyo</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/NYM.png" alt="" loading="lazy"><span class="full">New York Mets</span><span class="short">Mets</span></span></td><td class="num">$310k</td><td class="num hide-sm fine">04/07</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">CF</span> <a class="plink" href="https://statsplus.net/blm/player/44747/">Jesus Gallardo</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/COL.png" alt="" loading="lazy"><span class="full">Colorado Rockies</span><span class="short">Rockies</span></span></td><td class="num">$285k</td><td class="num hide-sm fine">04/13</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SS</span> <a class="plink" href="https://statsplus.net/blm/player/44757/">Ernesto Pesci</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/COL.png" alt="" loading="lazy"><span class="full">Colorado Rockies</span><span class="short">Rockies</span></span></td><td class="num">$280k</td><td class="num hide-sm fine">04/13</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SP</span> <a class="plink" href="https://statsplus.net/blm/player/44836/">Ruben Paiz</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/NYM.png" alt="" loading="lazy"><span class="full">New York Mets</span><span class="short">Mets</span></span></td><td class="num">$250k</td><td class="num hide-sm fine">03/02</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">RF</span> <a class="plink" href="https://statsplus.net/blm/player/44742/">Jesus Alvarez</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/MIN.png" alt="" loading="lazy"><span class="full">Minnesota Twins</span><span class="short">Twins</span></span></td><td class="num">$240k</td><td class="num hide-sm fine">05/18</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">C</span> <a class="plink" href="https://statsplus.net/blm/player/44683/">Manny Reveles</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/COL.png" alt="" loading="lazy"><span class="full">Colorado Rockies</span><span class="short">Rockies</span></span></td><td class="num">$230k</td><td class="num hide-sm fine">04/27</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SP</span> <a class="plink" href="https://statsplus.net/blm/player/44782/">Tony Vasquez</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="num">$230k</td><td class="num hide-sm fine">05/04</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">CF</span> <a class="plink" href="https://statsplus.net/blm/player/44829/">Bastian Ramos</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/TB.png" alt="" loading="lazy"><span class="full">Tampa Bay Rays</span><span class="short">Rays</span></span></td><td class="num">$220k</td><td class="num hide-sm fine">07/17</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">CF</span> <a class="plink" href="https://statsplus.net/blm/player/44835/">Marvin Muniz</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/ATL.png" alt="" loading="lazy"><span class="full">Atlanta Braves</span><span class="short">Braves</span></span></td><td class="num">$216.7k</td><td class="num hide-sm fine">04/13</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">CF</span> <a class="plink" href="https://statsplus.net/blm/player/44791/">Fontana Rosolino</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/TEX.png" alt="" loading="lazy"><span class="full">Texas Rangers</span><span class="short">Rangers</span></span></td><td class="num">$210k</td><td class="num hide-sm fine">04/27</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">CF</span> <a class="plink" href="https://statsplus.net/blm/player/44769/">Leonardo Palacio</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="num">$200k</td><td class="num hide-sm fine">04/20</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">1B</span> <a class="plink" href="https://statsplus.net/blm/player/44705/">Jorge Gutierres</a><div class="fine show-sm">Panama</div></td><td class="hide-sm">Panama</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="num">$200k</td><td class="num hide-sm fine">05/04</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">CF</span> <a class="plink" href="https://statsplus.net/blm/player/44841/">Willie Suniga</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/MIN.png" alt="" loading="lazy"><span class="full">Minnesota Twins</span><span class="short">Twins</span></span></td><td class="num">$200k</td><td class="num hide-sm fine">06/22</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">C</span> <a class="plink" href="https://statsplus.net/blm/player/44840/">Andres Campos</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/TB.png" alt="" loading="lazy"><span class="full">Tampa Bay Rays</span><span class="short">Rays</span></span></td><td class="num">$200k</td><td class="num hide-sm fine">07/13</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">2B</span> <a class="plink" href="https://statsplus.net/blm/player/44731/">Gabriele D&#39;Annunzio</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/NYM.png" alt="" loading="lazy"><span class="full">New York Mets</span><span class="short">Mets</span></span></td><td class="num">$177.1k</td><td class="num hide-sm fine">05/25</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SP</span> <a class="plink" href="https://statsplus.net/blm/player/44673/">Jose Bojorquez</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/TEX.png" alt="" loading="lazy"><span class="full">Texas Rangers</span><span class="short">Rangers</span></span></td><td class="num">$176.7k</td><td class="num hide-sm fine">04/27</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SP</span> <a class="plink" href="https://statsplus.net/blm/player/44746/">Rico Soria</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="num">$170k</td><td class="num hide-sm fine">06/08</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SP</span> <a class="plink" href="https://statsplus.net/blm/player/44738/">Orlando Banda</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/NYM.png" alt="" loading="lazy"><span class="full">New York Mets</span><span class="short">Mets</span></span></td><td class="num">$160k</td><td class="num hide-sm fine">05/25</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">CF</span> <a class="plink" href="https://statsplus.net/blm/player/44785/">Anton Moreno</a><div class="fine show-sm">Mexico</div></td><td class="hide-sm">Mexico</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/TB.png" alt="" loading="lazy"><span class="full">Tampa Bay Rays</span><span class="short">Rays</span></span></td><td class="num">$140k</td><td class="num hide-sm fine">07/13</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SS</span> <a class="plink" href="https://statsplus.net/blm/player/44744/">Vinny Cabrera</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/NYM.png" alt="" loading="lazy"><span class="full">New York Mets</span><span class="short">Mets</span></span></td><td class="num">$130k</td><td class="num hide-sm fine">06/08</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">1B</span> <a class="plink" href="https://statsplus.net/blm/player/44798/">Marco Castillo</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/TB.png" alt="" loading="lazy"><span class="full">Tampa Bay Rays</span><span class="short">Rays</span></span></td><td class="num">$110.5k</td><td class="num hide-sm fine">05/11</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">CF</span> <a class="plink" href="https://statsplus.net/blm/player/44789/">Juan Guzman</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="num">$100k</td><td class="num hide-sm fine">04/20</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">RF</span> <a class="plink" href="https://statsplus.net/blm/player/44763/">Pablo Abiles</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="num">$100k</td><td class="num hide-sm fine">05/25</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SP</span> <a class="plink" href="https://statsplus.net/blm/player/44793/">Willie Flores</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/NYM.png" alt="" loading="lazy"><span class="full">New York Mets</span><span class="short">Mets</span></span></td><td class="num">$100k</td><td class="num hide-sm fine">05/11</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SS</span> <a class="plink" href="https://statsplus.net/blm/player/44797/">David Mendoza</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/COL.png" alt="" loading="lazy"><span class="full">Colorado Rockies</span><span class="short">Rockies</span></span></td><td class="num">$97.5k</td><td class="num hide-sm fine">04/13</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SS</span> <a class="plink" href="https://statsplus.net/blm/player/44717/">Alex Medina</a><div class="fine show-sm">Colombia</div></td><td class="hide-sm">Colombia</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/TEX.png" alt="" loading="lazy"><span class="full">Texas Rangers</span><span class="short">Rangers</span></span></td><td class="num">$95.8k</td><td class="num hide-sm fine">05/25</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SP</span> <a class="plink" href="https://statsplus.net/blm/player/44780/">Ernesto Gordillo</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CIN.png" alt="" loading="lazy"><span class="full">Cincinnati Reds</span><span class="short">Reds</span></span></td><td class="num">$95.3k</td><td class="num hide-sm fine">05/18</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">C</span> <a class="plink" href="https://statsplus.net/blm/player/44756/">Andres Cruz</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/MIN.png" alt="" loading="lazy"><span class="full">Minnesota Twins</span><span class="short">Twins</span></span></td><td class="num">$90k</td><td class="num hide-sm fine">05/11</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">C</span> <a class="plink" href="https://statsplus.net/blm/player/44715/">Tony Rosalez</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="num">$88k</td><td class="num hide-sm fine">06/08</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">RF</span> <a class="plink" href="https://statsplus.net/blm/player/44745/">Ed Carlos</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/ATL.png" alt="" loading="lazy"><span class="full">Atlanta Braves</span><span class="short">Braves</span></span></td><td class="num">$86.7k</td><td class="num hide-sm fine">04/13</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">CF</span> <a class="plink" href="https://statsplus.net/blm/player/44759/">Felix Vasquez</a><div class="fine show-sm">Cuba</div></td><td class="hide-sm">Cuba</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/TB.png" alt="" loading="lazy"><span class="full">Tampa Bay Rays</span><span class="short">Rays</span></span></td><td class="num">$84k</td><td class="num hide-sm fine">07/13</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">C</span> <a class="plink" href="https://statsplus.net/blm/player/44844/">Ramon Alcantar</a><div class="fine show-sm">Colombia</div></td><td class="hide-sm">Colombia</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/TB.png" alt="" loading="lazy"><span class="full">Tampa Bay Rays</span><span class="short">Rays</span></span></td><td class="num">$82k</td><td class="num hide-sm fine">07/13</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">CF</span> <a class="plink" href="https://statsplus.net/blm/player/44698/">Juan Cruz</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="num">$80k</td><td class="num hide-sm fine">05/25</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">LF</span> <a class="plink" href="https://statsplus.net/blm/player/44693/">Alex Loera</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/COL.png" alt="" loading="lazy"><span class="full">Colorado Rockies</span><span class="short">Rockies</span></span></td><td class="num">$70.7k</td><td class="num hide-sm fine">04/27</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SP</span> <a class="plink" href="https://statsplus.net/blm/player/44716/">Roberto Solis</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/NYM.png" alt="" loading="lazy"><span class="full">New York Mets</span><span class="short">Mets</span></span></td><td class="num">$70.7k</td><td class="num hide-sm fine">04/27</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">1B</span> <a class="plink" href="https://statsplus.net/blm/player/44768/">Ricardo Mendez</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="num">$70k</td><td class="num hide-sm fine">05/25</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">CF</span> <a class="plink" href="https://statsplus.net/blm/player/44733/">Cesar Peralta</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/MIN.png" alt="" loading="lazy"><span class="full">Minnesota Twins</span><span class="short">Twins</span></span></td><td class="num">$70k</td><td class="num hide-sm fine">05/11</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SS</span> <a class="plink" href="https://statsplus.net/blm/player/44670/">Raul Castro</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/MIN.png" alt="" loading="lazy"><span class="full">Minnesota Twins</span><span class="short">Twins</span></span></td><td class="num">$70k</td><td class="num hide-sm fine">05/04</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">C</span> <a class="plink" href="https://statsplus.net/blm/player/44712/">Carlos Adame</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/MIN.png" alt="" loading="lazy"><span class="full">Minnesota Twins</span><span class="short">Twins</span></span></td><td class="num">$70k</td><td class="num hide-sm fine">05/04</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SS</span> <a class="plink" href="https://statsplus.net/blm/player/44802/">Tiago Mendia</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/MIN.png" alt="" loading="lazy"><span class="full">Minnesota Twins</span><span class="short">Twins</span></span></td><td class="num">$70k</td><td class="num hide-sm fine">05/04</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">CF</span> <a class="plink" href="https://statsplus.net/blm/player/44849/">Luis de Jesus</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/MIN.png" alt="" loading="lazy"><span class="full">Minnesota Twins</span><span class="short">Twins</span></span></td><td class="num">$70k</td><td class="num hide-sm fine">05/04</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">2B</span> <a class="plink" href="https://statsplus.net/blm/player/44743/">Nestor Barros</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/NYM.png" alt="" loading="lazy"><span class="full">New York Mets</span><span class="short">Mets</span></span></td><td class="num">$69.3k</td><td class="num hide-sm fine">04/27</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">C</span> <a class="plink" href="https://statsplus.net/blm/player/44714/">Javier Carrasco</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="num">$68k</td><td class="num hide-sm fine">06/08</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">RF</span> <a class="plink" href="https://statsplus.net/blm/player/44672/">Rafael Hurtado</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/LAA.png" alt="" loading="lazy"><span class="full">Los Angeles Angels</span><span class="short">Angels</span></span></td><td class="num">$66k</td><td class="num hide-sm fine">06/01</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SS</span> <a class="plink" href="https://statsplus.net/blm/player/44805/">Jon Garza</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/TEX.png" alt="" loading="lazy"><span class="full">Texas Rangers</span><span class="short">Rangers</span></span></td><td class="num">$65.4k</td><td class="num hide-sm fine">05/25</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">2B</span> <a class="plink" href="https://statsplus.net/blm/player/44808/">Ricky Tejada</a><div class="fine show-sm">Colombia</div></td><td class="hide-sm">Colombia</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="num">$65k</td><td class="num hide-sm fine">05/04</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">CF</span> <a class="plink" href="https://statsplus.net/blm/player/44778/">Jerry Molena</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/NYM.png" alt="" loading="lazy"><span class="full">New York Mets</span><span class="short">Mets</span></span></td><td class="num">$65k</td><td class="num hide-sm fine">06/15</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SP</span> <a class="plink" href="https://statsplus.net/blm/player/44775/">Pedro Castilleja</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/MIN.png" alt="" loading="lazy"><span class="full">Minnesota Twins</span><span class="short">Twins</span></span></td><td class="num">$60k</td><td class="num hide-sm fine">05/04</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SS</span> <a class="plink" href="https://statsplus.net/blm/player/44788/">Willie Montellano</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="num">$60k</td><td class="num hide-sm fine">05/04</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">2B</span> <a class="plink" href="https://statsplus.net/blm/player/44777/">Jose Sanchez</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/MIN.png" alt="" loading="lazy"><span class="full">Minnesota Twins</span><span class="short">Twins</span></span></td><td class="num">$60k</td><td class="num hide-sm fine">06/22</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SS</span> <a class="plink" href="https://statsplus.net/blm/player/44812/">Santiago Urena</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/NYM.png" alt="" loading="lazy"><span class="full">New York Mets</span><span class="short">Mets</span></span></td><td class="num">$56k</td><td class="num hide-sm fine">06/08</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">CF</span> <a class="plink" href="https://statsplus.net/blm/player/44735/">Carlos Carias</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/TB.png" alt="" loading="lazy"><span class="full">Tampa Bay Rays</span><span class="short">Rays</span></span></td><td class="num">$55.2k</td><td class="num hide-sm fine">05/11</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">CF</span> <a class="plink" href="https://statsplus.net/blm/player/44725/">Ricky Alfaro</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="num">$55k</td><td class="num hide-sm fine">05/04</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">C</span> <a class="plink" href="https://statsplus.net/blm/player/44718/">Khaled Villa</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="num">$50k</td><td class="num hide-sm fine">05/25</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">2B</span> <a class="plink" href="https://statsplus.net/blm/player/44781/">Jorge Feliz</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="num">$50k</td><td class="num hide-sm fine">05/04</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">CF</span> <a class="plink" href="https://statsplus.net/blm/player/44787/">Sergio Salazar</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/NYM.png" alt="" loading="lazy"><span class="full">New York Mets</span><span class="short">Mets</span></span></td><td class="num">$50k</td><td class="num hide-sm fine">06/08</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">LF</span> <a class="plink" href="https://statsplus.net/blm/player/44843/">Edgar Navarro</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/TEX.png" alt="" loading="lazy"><span class="full">Texas Rangers</span><span class="short">Rangers</span></span></td><td class="num">$46k</td><td class="num hide-sm fine">10/25</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">C</span> <a class="plink" href="https://statsplus.net/blm/player/44762/">Andres Esquibel</a><div class="fine show-sm">Cuba</div></td><td class="hide-sm">Cuba</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/TB.png" alt="" loading="lazy"><span class="full">Tampa Bay Rays</span><span class="short">Rays</span></span></td><td class="num">$44k</td><td class="num hide-sm fine">07/13</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">C</span> <a class="plink" href="https://statsplus.net/blm/player/44704/">Nelson Blanco</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/TB.png" alt="" loading="lazy"><span class="full">Tampa Bay Rays</span><span class="short">Rays</span></span></td><td class="num">$42k</td><td class="num hide-sm fine">07/13</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">C</span> <a class="plink" href="https://statsplus.net/blm/player/44723/">Jerry Cardenas</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/TB.png" alt="" loading="lazy"><span class="full">Tampa Bay Rays</span><span class="short">Rays</span></span></td><td class="num">$42k</td><td class="num hide-sm fine">07/13</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">1B</span> <a class="plink" href="https://statsplus.net/blm/player/44722/">Edwin Arteaga</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="num">$40k</td><td class="num hide-sm fine">05/25</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">C</span> <a class="plink" href="https://statsplus.net/blm/player/44749/">Mario Jimenez</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="num">$40k</td><td class="num hide-sm fine">05/25</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">RF</span> <a class="plink" href="https://statsplus.net/blm/player/44814/">Diego Vidal</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="num">$40k</td><td class="num hide-sm fine">05/25</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">C</span> <a class="plink" href="https://statsplus.net/blm/player/44699/">Leandro Gregrio</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/MIN.png" alt="" loading="lazy"><span class="full">Minnesota Twins</span><span class="short">Twins</span></span></td><td class="num">$40k</td><td class="num hide-sm fine">05/11</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">C</span> <a class="plink" href="https://statsplus.net/blm/player/44784/">Armel Leroy</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/MIN.png" alt="" loading="lazy"><span class="full">Minnesota Twins</span><span class="short">Twins</span></span></td><td class="num">$40k</td><td class="num hide-sm fine">06/22</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">C</span> <a class="plink" href="https://statsplus.net/blm/player/44758/">Jerry Nesi</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="num">$40k</td><td class="num hide-sm fine">06/08</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SP</span> <a class="plink" href="https://statsplus.net/blm/player/44773/">Tony Legorreta</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/HOU.png" alt="" loading="lazy"><span class="full">Houston Astros</span><span class="short">Astros</span></span></td><td class="num">$40k</td><td class="num hide-sm fine">07/27</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SS</span> <a class="plink" href="https://statsplus.net/blm/player/44706/">Arturo Godoy</a><div class="fine show-sm">Cuba</div></td><td class="hide-sm">Cuba</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/NYM.png" alt="" loading="lazy"><span class="full">New York Mets</span><span class="short">Mets</span></span></td><td class="num">$38k</td><td class="num hide-sm fine">06/22</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SP</span> <a class="plink" href="https://statsplus.net/blm/player/44819/">Juan Romero</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/NYM.png" alt="" loading="lazy"><span class="full">New York Mets</span><span class="short">Mets</span></span></td><td class="num">$38k</td><td class="num hide-sm fine">06/22</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">C</span> <a class="plink" href="https://statsplus.net/blm/player/44770/">Franklin Lopez</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/TEX.png" alt="" loading="lazy"><span class="full">Texas Rangers</span><span class="short">Rangers</span></span></td><td class="num">$35.4k</td><td class="num hide-sm fine">05/25</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">CF</span> <a class="plink" href="https://statsplus.net/blm/player/44801/">Benjamin Felix</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/NYM.png" alt="" loading="lazy"><span class="full">New York Mets</span><span class="short">Mets</span></span></td><td class="num">$34k</td><td class="num hide-sm fine">06/08</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">CF</span> <a class="plink" href="https://statsplus.net/blm/player/44842/">Jose Mendez</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="num">$34k</td><td class="num hide-sm fine">06/08</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SP</span> <a class="plink" href="https://statsplus.net/blm/player/44677/">Frank Toledo</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/HOU.png" alt="" loading="lazy"><span class="full">Houston Astros</span><span class="short">Astros</span></span></td><td class="num">$34k</td><td class="num hide-sm fine">07/27</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SP</span> <a class="plink" href="https://statsplus.net/blm/player/44692/">Alfonso Marcano</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/HOU.png" alt="" loading="lazy"><span class="full">Houston Astros</span><span class="short">Astros</span></span></td><td class="num">$34k</td><td class="num hide-sm fine">07/27</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">RF</span> <a class="plink" href="https://statsplus.net/blm/player/44687/">Carlos de la Rosa</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/TB.png" alt="" loading="lazy"><span class="full">Tampa Bay Rays</span><span class="short">Rays</span></span></td><td class="num">$34k</td><td class="num hide-sm fine">07/17</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SS</span> <a class="plink" href="https://statsplus.net/blm/player/44689/">Edwin Rios</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/TB.png" alt="" loading="lazy"><span class="full">Tampa Bay Rays</span><span class="short">Rays</span></span></td><td class="num">$34k</td><td class="num hide-sm fine">07/17</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SP</span> <a class="plink" href="https://statsplus.net/blm/player/44691/">Franklin de la Cruz</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/HOU.png" alt="" loading="lazy"><span class="full">Houston Astros</span><span class="short">Astros</span></span></td><td class="num">$34k</td><td class="num hide-sm fine">07/06</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">3B</span> <a class="plink" href="https://statsplus.net/blm/player/44690/">Sergio Alvarez</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="num">$32k</td><td class="num hide-sm fine">06/08</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">C</span> <a class="plink" href="https://statsplus.net/blm/player/44795/">Luis Cabrera</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/NYM.png" alt="" loading="lazy"><span class="full">New York Mets</span><span class="short">Mets</span></span></td><td class="num">$32k</td><td class="num hide-sm fine">06/08</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">C</span> <a class="plink" href="https://statsplus.net/blm/player/44804/">Octavio Bautista</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/NYM.png" alt="" loading="lazy"><span class="full">New York Mets</span><span class="short">Mets</span></span></td><td class="num">$32k</td><td class="num hide-sm fine">06/08</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SS</span> <a class="plink" href="https://statsplus.net/blm/player/44811/">Jonathan Ortiz</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/NYM.png" alt="" loading="lazy"><span class="full">New York Mets</span><span class="short">Mets</span></span></td><td class="num">$32k</td><td class="num hide-sm fine">06/08</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SP</span> <a class="plink" href="https://statsplus.net/blm/player/44827/">Wilson Casoli</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="num">$32k</td><td class="num hide-sm fine">06/08</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SP</span> <a class="plink" href="https://statsplus.net/blm/player/44680/">Alex Roque</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/HOU.png" alt="" loading="lazy"><span class="full">Houston Astros</span><span class="short">Astros</span></span></td><td class="num">$32k</td><td class="num hide-sm fine">07/27</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">2B</span> <a class="plink" href="https://statsplus.net/blm/player/44669/">Oscar Acuna</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/TB.png" alt="" loading="lazy"><span class="full">Tampa Bay Rays</span><span class="short">Rays</span></span></td><td class="num">$32k</td><td class="num hide-sm fine">07/17</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SP</span> <a class="plink" href="https://statsplus.net/blm/player/44774/">Tony Rocha</a><div class="fine show-sm">Mexico</div></td><td class="hide-sm">Mexico</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/NYM.png" alt="" loading="lazy"><span class="full">New York Mets</span><span class="short">Mets</span></span></td><td class="num">$31k</td><td class="num hide-sm fine">06/15</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">2B</span> <a class="plink" href="https://statsplus.net/blm/player/44701/">Ricardo Moreno</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/TB.png" alt="" loading="lazy"><span class="full">Tampa Bay Rays</span><span class="short">Rays</span></span></td><td class="num">$31k</td><td class="num hide-sm fine">07/13</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">CF</span> <a class="plink" href="https://statsplus.net/blm/player/44668/">Alex Ramirez</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/MIN.png" alt="" loading="lazy"><span class="full">Minnesota Twins</span><span class="short">Twins</span></span></td><td class="num">$30k</td><td class="num hide-sm fine">05/18</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">1B</span> <a class="plink" href="https://statsplus.net/blm/player/44675/">William Nunez</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/MIN.png" alt="" loading="lazy"><span class="full">Minnesota Twins</span><span class="short">Twins</span></span></td><td class="num">$30k</td><td class="num hide-sm fine">05/18</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">C</span> <a class="plink" href="https://statsplus.net/blm/player/44810/">Elias Santillan</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/MIN.png" alt="" loading="lazy"><span class="full">Minnesota Twins</span><span class="short">Twins</span></span></td><td class="num">$30k</td><td class="num hide-sm fine">05/18</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">C</span> <a class="plink" href="https://statsplus.net/blm/player/44674/">Alex Arias</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/MIN.png" alt="" loading="lazy"><span class="full">Minnesota Twins</span><span class="short">Twins</span></span></td><td class="num">$30k</td><td class="num hide-sm fine">05/11</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SS</span> <a class="plink" href="https://statsplus.net/blm/player/44686/">Mario Mendez</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/NYM.png" alt="" loading="lazy"><span class="full">New York Mets</span><span class="short">Mets</span></span></td><td class="num">$30k</td><td class="num hide-sm fine">06/08</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SP</span> <a class="plink" href="https://statsplus.net/blm/player/44846/">Roger Dominguez</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/HOU.png" alt="" loading="lazy"><span class="full">Houston Astros</span><span class="short">Astros</span></span></td><td class="num">$30k</td><td class="num hide-sm fine">07/06</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SS</span> <a class="plink" href="https://statsplus.net/blm/player/44694/">Bobby Zarate</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/NYM.png" alt="" loading="lazy"><span class="full">New York Mets</span><span class="short">Mets</span></span></td><td class="num">$28k</td><td class="num hide-sm fine">06/08</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">C</span> <a class="plink" href="https://statsplus.net/blm/player/44830/">Ruben Alvarado</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/NYM.png" alt="" loading="lazy"><span class="full">New York Mets</span><span class="short">Mets</span></span></td><td class="num">$28k</td><td class="num hide-sm fine">06/08</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SP</span> <a class="plink" href="https://statsplus.net/blm/player/44809/">Rodger Perez</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/HOU.png" alt="" loading="lazy"><span class="full">Houston Astros</span><span class="short">Astros</span></span></td><td class="num">$28k</td><td class="num hide-sm fine">07/27</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">3B</span> <a class="plink" href="https://statsplus.net/blm/player/44755/">Tony Valdez</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/NYM.png" alt="" loading="lazy"><span class="full">New York Mets</span><span class="short">Mets</span></span></td><td class="num">$27k</td><td class="num hide-sm fine">06/15</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">RF</span> <a class="plink" href="https://statsplus.net/blm/player/44711/">Mario Agosto</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="num">$26k</td><td class="num hide-sm fine">06/08</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">1B</span> <a class="plink" href="https://statsplus.net/blm/player/44817/">Yok-sing Xie</a><div class="fine show-sm">Taiwan</div></td><td class="hide-sm">Taiwan</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="num">$26k</td><td class="num hide-sm fine">06/08</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">2B</span> <a class="plink" href="https://statsplus.net/blm/player/44713/">Bobby Munoz</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/TB.png" alt="" loading="lazy"><span class="full">Tampa Bay Rays</span><span class="short">Rays</span></span></td><td class="num">$26k</td><td class="num hide-sm fine">07/17</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SP</span> <a class="plink" href="https://statsplus.net/blm/player/44828/">Chris Ambriz</a><div class="fine show-sm">Dominican Republic</div></td><td class="hide-sm">Dominican Republic</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/NYM.png" alt="" loading="lazy"><span class="full">New York Mets</span><span class="short">Mets</span></span></td><td class="num">$24k</td><td class="num hide-sm fine">06/22</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">SS</span> <a class="plink" href="https://statsplus.net/blm/player/44719/">Steve Ramos</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/CWS.png" alt="" loading="lazy"><span class="full">Chicago White Sox</span><span class="short">White Sox</span></span></td><td class="num">$24k</td><td class="num hide-sm fine">08/24</td></tr>
+  
+    <tr><td class="grow sel"><span class="pos">CF</span> <a class="plink" href="https://statsplus.net/blm/player/44709/">Marciano Ruelas</a><div class="fine show-sm">Venezuela</div></td><td class="hide-sm">Venezuela</td>
+      <td><span class="team"><img class="logo" src="../../assets/logos/NYM.png" alt="" loading="lazy"><span class="full">New York Mets</span><span class="short">Mets</span></span></td><td class="num">$22k</td><td class="num hide-sm fine">06/08</td></tr>
+  </tbody>
+</table></div>
+
+
+</main>
+
+<footer>
+  <div class="wrap">The Long Season covers Baseball League Major, an Out of the Park Baseball online league. Updated October 10, 2026 from the league file dated 2059-3-7.</div>
+</footer>
+</body>
+</html>
